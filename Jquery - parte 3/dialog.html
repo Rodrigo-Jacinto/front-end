@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Janelas de Dialog</title>
+
+    <script src="jquery-ui-1.12.1.custom\jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom\jquery-ui.min.css">
+    <script src="jquery-ui-1.12.1.custom\jquery-ui.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(function(){
+            //Janela de dialogo simples
+            $("#dialogo").dialog();
+
+            $("#dialogoModal").dialog({
+                //Podemos definir largura e altura
+                height:135,
+                width:500,
+                modal:true//janela impossibilita de acessar outros elementos na página
+            });
+
+          $("#dialogoButton").dialog({
+                buttons:{
+                    Sim:function(){
+                        $(this).dialog("close");
+                    },
+                    não:function(){}
+                }
+
+            });
+
+        });
+    </script>
+  </head>
+
+    <body>
+
+        <div id="dialogo" title="Janela de Dialogo">
+            <p>
+              Utilizando as janelas de Dialogo do Jquery-UI
+            </p>
+        </div>
+
+        <div id="dialogoModal" title="Janela de Dialogo">
+            <p>
+              Utilizando as janelas de Dialogo Modal do Jquery-UI
+            </p>
+        </div>
+
+        <div id="dialogoButton" title="Janela de Dialogo">
+            <p>
+                Você Deseja sair do sistema ?
+            </p>
+        </div>
+
+  </body>
+</html>

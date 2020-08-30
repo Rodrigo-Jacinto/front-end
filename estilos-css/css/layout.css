@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/*Bom para ajustar o layout na hora da criação*/
+div{
+  border: 1px solid black;
+}
+
+#geral {
+  width:600px;
+  margin:0 auto;
+}
+
+#topo {
+  height:110px;
+  background-color:#DDCCFF;
+}
+
+#esquerda {
+  float:left;
+  width:130px;
+}
+
+#conteudo {
+  float:right;
+  width:460px;
+}
+#conteudo > #principal {
+  float:left;
+  width:350px;
+}
+
+#conteudo > #direita {
+  float:right;
+  width:100px;
+}
+
+#rodape {
+  clear:both;
+  height:120px;
+  background-color:#CCBBAA;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Largura de layouts
+
+
+#geral { Largura fixa é definida em Pixels
+
+border:1px solid black;
+width:700px; <------
+
+}
+
+
+#geral { Largura Liquida é definida em porcentagem
+
+border:1px solid black;
+width:80%; <----
+min-width:400px; Largu minina que o texto pode reduzir
+
+}
+
+* {Largura elastica, se ajusta dependendo do tamanho da font-size
+
+font-size:20px;
+
+
+}
+
+#geral {
+
+border:1px solid black;
+width:20em;
+}
+
+#geral {Centralizando a página
+
+border:1px solid black;
+width:90%;
+margin:0px auto;
+
+}
+
+
+
+*/

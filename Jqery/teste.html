@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Teste Jquery</title>
+</head>
+
+<style media="screen">
+.campo {
+  width: 500px;
+  height:200px;
+  background-color:#333;
+}
+
+.item-removido-cor {
+  background-color: #F0B;
+  color: white;
+}
+
+</style>
+<body>
+
+
+  <table border="1">
+
+    <thead>
+      <tr>
+        <th>Nome do Produto</th>
+        <th>Valor</th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Bola Adidas</td>
+        <td class="valor-produto">200.00</td>
+        <td><a href="#" class="remove-produto">(REMOVE)</a></td>
+      </tr>
+
+      <tr>
+        <td>Bola Nike</td>
+        <td class="valor-produto">250.00</td>
+        <td><a href="#" class="remove-produto">(REMOVE)</a></td>
+      </tr>
+
+      <tr>
+        <td>Bola Penalty</td>
+        <td class="valor-produto">100.00</td>
+        <td><a href="#" class="remove-produto">(REMOVE)</a></td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <div>
+    Valor Total da Compra: <span class="valor-total">0</span><br>
+    Quantidade de Produtos: <span class="quantidade-de-prdotudos">0</span>
+  </div>
+
+
+  <div>
+    <button type="button" id="btn-retorna">Voltar Produto</button>
+  </div>
+
+  <img id="img-show" src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-578057.jpg" alt="foto">
+
+  <script src="js\jquery-3.1.1.min.js"></script>
+  <script src="js\teste.js"></script>
+
+  <script type="text/javascript">
+
+  $("#img-show").css({"width":"550px", height:"200px"})
+  $("#img-show").attr({"src":"https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-575828.jpg "});
+
+  var total = function(){
+
+    var itens = $(".valor-produto");
+    var valor = 0;
+
+    for(let i = 0; i < itens.length; i++){
+
+      var item = $(itens[i]);
+      valor += parseFloat(item.text());
+    }
+
+    $(".valor-total").text(valor);
+    $(".quantidade-de-prdotudos").text(itens.length);
+  }
+
+  var removeQtdProdutos = function(){
+    var atual = parseInt($(".quantidade-de-prdotudos").text());
+    var novo = atual - 1;
+    $(".quantidade-de-prdotudos").text(novo);
+  }
+
+  var removeValorTotal = function(self){
+
+    var valor = parseFloat(self.closest("tr").find(".valor-produto").text());
+    var valorTotal = parseFloat($(".valor-total").text());
+
+    valorTotal -= valor;
+    $(".valor-total").text(valorTotal);
+  }
+
+  var removeItem = function(event) {
+
+    var self = $(this);
+
+    removeQtdProdutos();
+    removeValorTotal(self);
+
+    event.preventDefault();
+    self.closest("tr").hide();
+  }
+
+  var retornaProduto = function(){
+
+    $("tr:visible").removeClass("item-removido-cor");
+    var trs = $("tr:hidden")
+    .addClass("item-removido-cor")
+    .show("slow");
+  }
+
+
+  function ini(){
+    total();
+    $(".remove-produto").click(removeItem);
+    $("#btn-retorna").click(retornaProduto);
+  }
+
+
+  $(ini); //Após Carregar todo HTML e CSS, ele executa a função ini();
+  </script>
+
+</body>
+</html>

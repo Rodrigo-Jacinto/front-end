@@ -1,0 +1,148 @@
+ul li {
+
+    text-align:center;
+    list-style-type:none;
+    color:white;
+    background-image:linear-gradient(to right, #19B5FE 40%,#3498db);
+    font-family:tahoma;
+    font-weight:bold;
+    width:300px;
+    border-bottom: 1px solid rgba(0,0,0, 0.3);
+    border-radius:10px;
+    text-shadow: 2px 2px 1px #6C7A89;
+
+}
+
+ul li:hover {
+
+  background-color:rgba(0, 0, 0, 0.5);
+  color:orange;
+  cursor:pointer;
+
+
+}
+
+img {
+
+  width:400px;
+  height:150px;
+  float:left;
+  margin-right:10px;
+}
+
+.marcas {
+
+  width:100%;
+  height:50px;
+  background-image:linear-gradient(to right, #19B5FE 40%,#3498db);
+  margin-bottom:100px;
+  position:fixed;
+
+}
+ol li {
+
+    list-style-type:none;
+    float: left;
+    font-family:tahoma;
+    font-weight:bold;
+    color:white;
+    padding:10px;
+
+}
+p {
+
+  margin-bottom: 30px;
+
+}
+
+.coluna {
+column-count: 4;/*Diz quanto colunas vai ter */
+column-gap: 10px;/*Espaçamento entre a borda lateral e o conteudo */
+column-rule: 3px solid #666;/* diz as propriedades da coluna que será utilizada */
+font-size: 0.9em;
+width: 500px;
+}
+
+.container-flex {
+
+    width:300px;
+    height:60px;
+    display:flex;
+
+}
+
+.box {
+
+  flex:auto;
+  height: 30px;
+  display:block;
+  font-weight:bold;
+  text-align:center;
+  color:white;
+
+}
+
+.um {
+  background-color:blue;
+}
+
+.dois {
+  background-color:red;
+}
+.tres {
+  background-color:green;
+}
+
+.quatro {
+  background-color: yellow;
+}
+
+.cinco {
+
+  background-color: black;
+
+}
+
+input {
+
+    border-radius: 3px 3px 0 0;
+    box-shadow: 1px 1px 35px rgba(0,0,0,0.2);
+    font-weight:bold;
+
+}
+
+::-webkit-input-placeholder {
+
+      font-style:italic;
+      font-weight:normal;
+      color:#666;
+
+}
+
+button {
+
+    background-image:linear-gradient(to bottom, #FFF, #E5E5E5);
+    border-radius:5px;
+    padding:5px 10px;
+    font-weight: bold;
+    border:1px solid #AAA;
+    color:#000;
+
+}
+
+button:hover {
+
+    background-image:linear-gradient(to bottom, #3775B3, #285582);
+    border-color:#204569;
+    color:#FFF;
+}
+
+button:active {
+
+    background-color:#204569;
+    background-image: none;
+    border-color: #1A3754;
+    box-shadow: inset 0 2px 1px rgba(0,0,0, 0.15);
+
+
+}

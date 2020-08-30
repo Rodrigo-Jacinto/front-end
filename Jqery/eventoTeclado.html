@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+
+<html lang="pt-BR">
+
+  <head>
+
+    <title>Eventos de Teclado</title>
+    <meta charset="utf-8">
+    <script src="js\jquery-3.1.1.min.js"></script>
+    <script src="js\eventoTeclado.js"></script>
+
+    <style>
+      div {
+
+        border:4px ridge black;
+        background-color:#CCC;
+        width:260px;
+        height:80px;
+        margin-bottom:50px;
+        font-family:"arial black";
+        text-align: center;
+        box-sizing:border-box;
+        padding-top: 20px;
+      }
+
+      form {
+
+        width:350px;
+        height:120px;
+      }
+
+      fieldset {
+
+          background-color:#CCC;
+      }
+
+    </style>
+
+  </head>
+
+
+    <div></div>
+
+    <form action="#" method="post">
+
+      <fieldset>
+        <legend>Formulário</legend>
+
+        <label for="texto">Texto</label>
+        <input type="text" name="texto" value="" placeholder="Texto"><br><br>
+
+        <label>Select</label>
+        <select class="" name="">
+          <option value="brasil">Brasil</option>
+          <option value="Argentina">Argentina</option>
+          <option value="alemanha">Alemanha</option>
+        </select><br><br>
+
+      <textarea name="obs" rows="8" cols="40" placeholder="Digite Aqui"></textarea>
+      <input type="submit" name="name" value="Enviar">
+      </fieldset>
+
+    </form>
+
+
+</html>

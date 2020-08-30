@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+
+<html lang="pt">
+
+    <head>
+      <meta charset="utf-8" />
+      <title>Bootstrap</title>
+      <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    </head>
+
+    <body>
+
+      <form>
+
+        <div>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" class="form-control" placeholder="Nome" required autofocus />
+          <!--
+          Atributo "required" - não deixa enviar os dados com campo em branco
+         -->
+        </div>
+
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="seuemail@gmail.com" required />
+
+        </div>
+
+          <div>
+            <label for="nasc">Data de Nascimento</label>
+            <input type="date" name="nasc" id="email" class="form-control" required min="2016-01-01" />
+          </div>
+
+          <div>
+            <label for="vol">Volume</label>
+            <input type="range" name="vol" id="vol" class="form-control"/>
+          </div>
+
+
+          <div>
+            <label for="busca">Busca</label>
+            <input type="search" name="busca" id="busca" class="form-control"/>
+          </div>
+
+          <div>
+            <label for="url">URL</label>
+            <input type="url" name="url" id="url" class="form-control"/>
+          </div>
+
+          <div>
+            <label for="cor">Cor</label>
+            <input type="color" name="cor" id="cor" class="form-control"/>
+          </div>
+
+          <button type="submit" class="btn btn-danger">Cadastrar</button>
+
+      </form>
+
+        <script type="text/javascript" src="bootstrap/js/script.min.js" />
+    </body>
+
+  </html>
+
+  <!--
+
+    Tipos de Inputs novos:
+
+      --date {
+
+      min="01-01-2016"Informa a data minina que o ususario pode colocar
+      max="01-01-2019" Informa a data maxima que o usario pode colocar
+    }
+      --email
+      --number
+      --range
+      --color
+      --url
+      --search
+      --month
+      --time
+      --week
+      step
+      autofocus
+      checkd
+
+  -->

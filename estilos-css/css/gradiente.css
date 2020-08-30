@@ -1,0 +1,17 @@
+.cabecalho {
+  width:100%;
+  height: 130px;
+  background-image: linear-gradient(to bottom, #F00,#000); /*Da o efeito de gradiente no fundo */
+
+  /*Outras combinações
+    to left
+    to right
+    to top
+  */
+}
+
+.cabecalho2 {
+  width:100%;
+  height: 130px;
+  background-image:radial-gradient(#F00 50%,#000); /*Da o efeito de gradiente no fundo */
+}

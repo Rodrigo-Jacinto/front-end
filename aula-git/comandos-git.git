@@ -1,0 +1,82 @@
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 80b26463e2d8d2acf04f3ac6a01ccce0688315ff
+=======
+
+>>>>>>> 80b26463e2d8d2acf04f3ac6a01ccce0688315ff
+git config --global user.com "Rodrigo Jacinto" - Adiciona o nome do autor
+
+git config --global user.email "rodrigojacinto16@gmail.com - Adiciona o email
+
+git init - Inicia uma o versionamento git no repositório escolhido
+
+touch nome-do-arquivo - Cria um novo arquivo
+
+git status - Mostra se há algum commit a ser feito, ou arquivo novo no projeto que ainda não foi a adicionado a versionamento
+
+git add nome-do-arquivo - O Arquivo fica em estado de pronto para ser commitado
+
+git add . - Deixa todos os arquivos em estado de pronto.
+
+git add --all - adiciona todos os arquivos, até os deletados
+
+git diff - Mostra as alterações feitas no arquivos
+
+git diff --staged - Mostra as alterações feitas no arquivo adicionado no stage area
+
+git commit -m "Descrição do Commit" - Arquivo entra para o versionamento de código
+
+git commit -a - Commita todos os arquivos
+
+git rm nome-arquivo - remove o arquivo do diretório
+
+git mv nome-arquivo novo-nome // renomeia nome do arquivo ou move ele para no diretório
+
+git reset HEAD nome-do-arquivo - volta o arquivo que foi dado "git add" para untracked
+
+git reset HEAD~1 --soft - volta um commit, para apenas "git add";
+
+git reset HEAD~1 --hard - volta um commit, perde tudo oque foi feito naquele versão;
+
+git log - Mostra todos os commit feitos no projeto, mostra Hora & Data das modificações
+
+git log -p - Mostras todos os commit, bem suas alterações feitas
+
+git log --stat - Mostra os comatmits, e a quantidade suas modificações feitas no arquivos
+
+git log --name-status - Mostra todos os commits com suas alterações
+
+git log --pretty=oneline - Mostra os commits resumidamente
+
+git log --pretty=format:"%h - %an, %ar : %s" - Mostra autor, data e horas que foi comitado
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+git branch - Listar branches
+=======
+
+>>>>>>> 80b26463e2d8d2acf04f3ac6a01ccce0688315ff
+=======
+
+>>>>>>> 80b26463e2d8d2acf04f3ac6a01ccce0688315ff
+git checkout -b - cria um novo branch, cria uma nova linha do tempo.
+git checkout master - volta para linha do tempo padrão que é a master.
+
+git merge nome-do-branch - pega os commit dos novo branch e coloca no master, cria um novo commit
+git rebase nome-do-branch - pegas os commit do novo branch e coloca no master, alinhado de forma correta, sem criar novo commit
+
+ssh-keygen - Criar par de chaver publicas e privadas
+cd ~/.ssh/ - entra no local a onde estão as chaves
+cat id_rsa.pub - ler a chave public
+
+//sicroniza diretório local com diretorio remoto
+git remote add origin url-do-github
+
+//faz download de repositório remoto 
+git clone url-do-github
+
+//adiciona branch com arquivos bem seus logs no diretório remoto
+git push origin master

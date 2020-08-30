@@ -1,0 +1,51 @@
+* {
+
+ box-sizing:border-box;
+
+}
+
+html, body {
+
+  padding:0;
+  margin:0;
+
+}
+
+ form {
+
+    float:left;
+    margin-left:20%;
+    margin-top:11%;
+}
+
+fieldset {
+  width:350px;
+  height:230px;
+  box-shadow:10px 10px #CCC;
+  border: 5px solid #2980b9;
+  background-color:#3498db;
+
+}
+
+label {
+
+  font-family:"Arial Black";
+  color:white;
+
+}
+
+input {
+
+    width:300px;
+    height:30px;
+    border-radius:4px;
+    border:3px ridge #CCC;
+
+}
+table {
+
+  float:right;
+  margin-right:20%;
+  margin-top:11%;
+
+}

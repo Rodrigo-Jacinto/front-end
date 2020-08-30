@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+P, h1 {
+
+  color:#7F1919;
+}
+
+
+/*
+
+ ---------------Seletores Simples---------------------------
+Observação:
+
+Tags marcadas com "!important" dão preferencia na estilização
+
+
+
+* {
+
+    Seletor Universal consegue modificar qualquer elemento da página
+}
+
+ p {
+
+ Seletor Elemento
+}
+
+.cabecalho {
+
+Seletor Classe
+<div class="cabecalho">
+</div>
+
+}
+
+#conteudo{
+
+Seletor id
+<div id="conteudo">
+</div>
+
+}
+
+em[title="empresa"] {
+
+Seletor Atributo
+<em title="empresa">Enfase</em>
+
+em[title ~= "empresa"] - aceita o atributo mesmo que exista mais palavras "empresa x"
+em[title |= "empresa"] - Atributos com Hifen "empresa-x"
+a[href ^="http:"] - Todo link que tem http: no começo
+a[href $=".zip"] - Todo link tem .zip no final
+}
+
+--------------------Seletores Compostos----------------------
+div em {
+Seletor Decendente
+<div>
+<p>Rodrigo Jacinto da <em>silva</em></p> ---- Só precisa estar dentro pra ser decendente
+</div>
+}
+
+div > h1 {
+
+Seletor filho
+<div>
+
+  <h1>Rodrigo</h1> ------- Tem que esta apenas dentro de div para ser filho
+</div>
+
+p + p {
+
+Seletor irmãos adjacentes
+aplica a segundo p que for encontrado na div
+
+<div>
+<p>Rodrigo</p>
+<p>Jacinto</p>s
+</div>
+
+}
+
+
+li ~ li {
+
+  # Aplica para as LI's menos para a primeira
+
+  <ol>
+    <li></li>
+    <li></li>
+    <li></li>
+ </ol>
+
+}
+-------------------------Peseudo Classes(Eventos)-----------------
+
+div h1: first-child {
+
+  Modifica a tag <h1> se ela for o primeiro filho da div
+
+}
+
+a:link{
+
+  Estiliza a tag <a> que ainda não foi visitada
+
+}
+
+  tr:nth-child(odd){
+    seleciona todas as tr's impares
+}
+
+  tr:nth-child(even){
+    seleciona todas as tr's pares
+}
+
+  tr:nth-child(2){
+    seleciona uma tr específica
+}
+
+
+a:visited{
+
+  Estiliza a tag <a> que foi visitada
+
+}
+
+input[type="text"]: focus {
+
+      Estiliza quando o elemento estiver em foco
+
+}
+
+label:hover {
+
+  estiliza quando o mouse estiver em cima do elemento
+
+}
+
+a:active {
+  Estiliza quando elemento for clicado
+  Exemplo: Quando um link é clicado
+}
+
+a:lang(en) {
+
+  Estiliza todo link que estiver com o elemento lan="en"
+
+}
+
+:lang(en){
+
+    estiliza qualquer tag que estiver com elemento lang(en)
+
+}
+
+----------------Pesduo Elementos---------------
+
+p:first-line{
+
+    Estilza a primeira linha do paragráfo
+
+}
+
+p:first-letter {
+
+  Estiliza a primeira letra da Linha
+
+}
+
+p:before {
+
+  content:"Inicio";
+  Coloca texto no inicio da frase
+}
+
+p:after {
+
+  content:"FIM";
+  Coloca texto no fim da frase
+}

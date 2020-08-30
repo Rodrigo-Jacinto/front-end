@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lag="pt-br">
+<head>
+  <title>Clássico</title>
+  <meta charset="utf-8">
+
+  <map name="escudos">
+    <area shape="rect" coords="2,2,222,326" target="_blank" href="https://pt.wikipedia.org/wiki/Brasil">
+  </map>
+
+</head>
+
+<body>
+
+  <img src="img/bra.jpg" alt="classico" usemap="#escudos" title="Brasil x Argentina">
+
+  <table border='1' cellpadding='20' cellspacing='2'>
+
+    <thead>
+      <th>Seleçoes</th>
+      <th>Titulos</th>
+    </thead>
+
+    <tr>
+      <th>Brasil</th>
+      <td>5 Copas do Mundo</td>
+    </tr>
+
+    <tr>
+      <th>Argetina</th>
+      <td>2 Copas do Mundo</td>
+    </tr>
+
+    <tbody>
+    </tbody>
+
+  </table>
+
+  <a href="http://globoesporte.globo.com/futebol/futebol-internacional/jogo/08-02-2017/brasil-argentina/" target="_blank">Clássico</a>
+
+  <form action="confronto.html" method="get">
+
+    <fieldset>
+
+      <legend>Jogador preferido</legend>
+
+      <label for="idade">Sua Idade</label>
+      <input type="number" name="idade" id="idade" placeholder="Exemplo: 23" autofocus required><br><br>
+      <label for="Nome">Seu Nome</label>
+      <input type="text" name="Nome" id="Nome" placeholder="Rodrigo" required><br><br>
+
+      <select name="jogador">
+        <optgroup label="America do Sul">
+          <option value="neymar">Neymar</option>
+          <option value="messi">Messi</option>
+        </optgroup>
+        <optgroup label="Europa">
+          <option value="cristiano">Cristiano Ronaldo</option>
+          <option value="miller">Miller</option>
+        </optgroup>
+      </select><br><br>
+
+      <button type="submit">Enviar</button>
+      <button type="reset">Limpar</button>
+    </fieldset>
+
+  </form>
+
+  <ul>
+    <li>Brasil</li>
+    <li>Argentina</li>
+  </ul>
+S&oacute;
+</body>
+
+</html>

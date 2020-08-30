@@ -1,0 +1,73 @@
+ol {
+  list-style-type:none;
+  padding: 0;
+}
+
+ul {
+  list-style-type:none;
+  padding: 0;
+}
+
+div {
+    margin:100px auto;
+    width:550px;
+    height:200px;
+}
+
+li {
+  float:left;
+  margin-left:10px;
+  position: relative;
+}
+
+span {
+    font-weight:bold;
+    color:blue;
+    margin-top:5px;
+    display: block;
+    text-align: center;
+}
+
+ ol li:nth-child(even) {/*Seleciona a li par */
+   transform-style:preserve-3d;
+    transform:rotate(5deg);/*Roda a imagem 5 graus no sentido horario */
+}
+
+ol li:nth-child(odd) {/*Seleciona a li impar */
+    transform:rotate(-5deg);/*Roda a imagem 5 graus no sentido anti-horario */
+}
+
+ol li:hover {
+  transform:scale(1.3);/*Auamenta a imagem com o passar do mouse */
+  z-index:1;
+}
+
+.menu-one li {
+  transform:skew(10deg, 10deg);/* direciona a imagem para trás */
+}
+
+.menu li:nth-child(even) {
+  transform:translateY(10px);/*Desce a imagem 10px da sua posição */
+}
+
+.menu li:nth-child(odd) {
+
+  transform:translateY(-20px);/*sob a imagem 20px da sua posição */
+
+}
+
+.menu-two li:hover {
+  opacity:1;/* Faz imagem aparecer */
+  transform:scale(1.3);
+  transition: transform 0.3s linear;/*cria efeito aumentando imagem gradativamente */
+  /*Outras propriedases
+    ease
+    ease-in
+    ease-out
+    ease-in-out
+  */
+}
+
+.x {
+  opacity:0;/*Deixa imagem invisivel */
+}

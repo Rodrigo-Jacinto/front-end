@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+ul {
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+li {
+
+  border:1px solid black;
+  width:110px;
+  padding:10px;
+  position:relative;
+
+}
+
+li:hover {
+
+  background-color:black;
+  color:white;
+
+}
+
+li > ul {
+
+  left:130px;
+  top:-1px;
+  position:absolute;
+  color:black;
+  display:none;
+
+}
+
+li:hover > ul {
+
+  display:block;
+
+}

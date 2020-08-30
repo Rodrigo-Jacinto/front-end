@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+html{
+  background-color:#89BBEE;
+}
+
+h1{
+  color:#AB9900;
+  font-family:"Comic sans MS";
+}
+
+h1:hover {
+  color:#AE6900;
+}
+
+div p {
+  color:white;
+  font-family:"Comic sans MS";
+  font-size:20px;
+}
+
+p:first-letter {
+
+      font-size:30px;
+      color:red;
+}
+
+p:first-line {
+
+   color:blue;
+}
+
+p:before{
+  content:"inicio ";
+
+}
+
+p:after {
+
+  content:"fim";
+
+}
+
+input[type="text"]:focus {
+
+  background-color:#2388CC;
+
+}

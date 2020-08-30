@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Drag em Drop</title>
+
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom\jquery-ui.min.css">
+    <script src="jquery-ui-1.12.1.custom\jquery-3.1.1.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom\jquery-ui.min.js"></script>
+
+      <style media="screen">
+          div {
+                border:2px ridge black;
+                width:200px;
+                height:100px;
+          }
+
+          #drop {
+                border:2px ridge black;
+                width:300px;
+                height:150px;
+          }
+      </style>
+
+    <script type="text/javascript">
+
+        $(function(){
+            //Movimenta elemento com o mouse pela tela
+           $("#drag").draggable();
+
+            //captura elemento que tem função draggable
+           $("#drop").droppable({
+
+                drop:function(event, ui){
+
+                  $(this).addClass("ui-state-highlight").find("p").html("colocou !!");
+
+                }
+           });
+
+      })
+
+
+    </script>
+  </head>
+  <body>
+
+        <div id="drag">
+
+          <p>Função draggable</p>
+
+        </div>
+
+        <div id="drop">
+
+          <p>Coloque div com draggable aqui !</p>
+
+        </div>
+
+  </body>
+</html>

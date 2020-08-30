@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Resizable</title>
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom\jquery-ui.min.css">
+    <script src="jquery-ui-1.12.1.custom\jquery-3.1.1.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom\jquery-ui.min.js"></script>
+
+    <style>
+
+        div {
+
+          border:1px solid black;
+          margin-bottom: 10px;
+        }
+
+    </style>
+    <script>
+
+      $(function(){
+
+        $("div, textarea").resizable();
+
+      });
+
+    </script>
+
+  </head>
+  <body>
+
+      <div>
+
+        <h3>Resizable</h3>
+
+      </div>
+
+      <textarea name="name" rows="8" cols="40"></textarea>
+
+  </body>
+</html>

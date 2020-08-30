@@ -1,0 +1,120 @@
+
+body {
+  background:#1E1E22;
+}
+
+
+/*--- barra de Navegação ----*/
+
+.img-logo {
+  height:40px;
+  width:160px;
+  background: url("img/logo.png") no-repeat;
+  background-size: contain;
+  color:transparent;
+}
+
+.campo-busca {
+
+  border-radius: 500px;
+  background: black;
+  border: 2px solid #ABB7B7;
+}
+
+nav.cor-barra {
+
+  background: rgb(0, 0, 0);
+  padding: 10px 0 15px 0;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  font-size: 18px;
+  font-weight:700;
+  color:white;
+}
+
+.texto-vermelho {
+  color:red;
+}
+
+.texto-laranja {
+  color:orange;
+}
+
+.texto-verde {
+  color:green;
+}
+
+.texto-azul {
+  color:#3498DB;
+}
+
+/* ----- CAPA ------*/
+
+.capa img {
+
+  display: block;
+  margin-top: 15%;
+
+}
+
+/*--- Conteúdo ---*/
+
+
+.margen-sec {
+
+    margin-top:50px;
+
+}
+.linha {
+  border-right: 1px solid #6C7A89;
+
+}
+.texto-cont {
+  color:white;
+  font-size:20px;
+}
+
+.texto-autor {
+
+  color:white;
+  font-size:20px;
+  display: block;
+  text-indent:20px;
+  margin:20px;
+  font-style:italic
+
+}
+
+.lista-links li {
+
+  font-size:20px;
+  color:white;
+
+}
+
+.lista-links li a {
+
+  font-size:20px;
+  color:#e5880e;
+  font-weight:bold;
+
+}
+
+.imagens-participantes {
+    float:left;
+}
+
+.participante {
+  font-size:20px;
+  color:white;
+  margin-left:10px;
+}
+
+/*--- Criptografia ---*/
+
+h4 {
+  margin:30px;
+  font-weight:bold;
+  color:white;
+}

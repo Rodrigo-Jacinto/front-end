@@ -1,0 +1,26 @@
+img {
+  width:800px;
+  border:1px solid red;
+}
+
+h1 {
+  color:blue;
+}
+
+h1:hover {
+  color:red;
+}
+
+#imagem {
+    border:3px solid blue;
+    position:relative;
+    width:800px;
+}
+
+#texto {
+  border:2px solid blue;
+  width:200px;
+  position:absolute;
+  top:0px;
+  left:500px;
+}

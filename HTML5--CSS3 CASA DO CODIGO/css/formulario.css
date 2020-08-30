@@ -1,0 +1,85 @@
+label {
+  font-weight: bold;
+  display:block;
+}
+
+form {
+
+  padding:10px;
+
+}
+
+input {
+
+  border: 1px solid #CCC;
+  box-shadow:inset 2px 2px 2px #EEE;
+  padding:5px 10px;
+
+}
+
+.container {
+
+  width:200px;
+  perspective:500px;
+  height:300px;
+  position:relative;
+  margin:150px auto;
+
+}
+
+.card {
+
+  border:1px solid #CCC;
+  border-radius:5px;
+  width:100%;
+  height:100%;
+  position:absolute;
+  transform-style:preserve-3d;
+  transition:transform 1s;
+}
+
+.card section {
+
+  backface-visibility:hidden;
+  background:#FFF;
+  border-radius:5px;
+  position:absolute;
+
+}
+
+.signup {
+
+  transform:rotateX(180deg);
+}
+
+.card.flipped{
+
+  transform:rotateX(180deg);
+}
+
+h1 {
+
+  color:#000;
+  text-align:center;
+  font-size: 1.4em;
+  animation: appear 2s 0 linear;
+  transform:scale(1.2);
+  transform-origin:50% 50%;
+
+}
+
+@keyframes appear {
+
+  0% {
+    opacity:0;
+    transform:scale(2);
+  }
+  70% {
+    opacity:1;
+    transform:scale(1);
+  }
+  100% {
+    transform:scale(1.2);
+
+  }
+}

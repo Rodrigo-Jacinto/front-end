@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Aprendendo Jquery</title>
+    <script src="js\jquery-3.1.1.min.js"></script>
+
+    <script>
+
+      $(document).ready(function(){
+
+          $("a").click(function(){
+
+            $("#titulo").text("Novo texto do H1 usando Jquery");//Altera o texto do Html
+            $("#titulo").css("background-color", "black");
+            $("#titulo").css("color", "white");
+            $("#titulo").hide();//Oculta o elemento, deixa invisivel
+            $("#titulo").fadeToggle();//Mostra elemento invisivel
+
+            /* FORMA ENCADEADA DE USAR VARIAS FUNÇÕES CHAMANDO APENAS
+            UMA VEZ O ELEMENTO HTML
+
+              $("#titulo")
+              .text("Novo texto do H1 usando Jquery")
+              .css("background-color", "black")
+              .css("color", "white").hide()
+              .fadeToggle();//Mostra elemento invisivel
+              */
+          });
+      });
+
+    </script>
+
+  </head>
+
+  <body>
+
+      <h1 class="x" id="titulo">Olá Mundo</h1>
+      <a href="#">Executar JavaScript</a><br>
+      <a href="#">link2</a>
+
+
+  </body>
+
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+      <meta charset="utf-8" />
+      <title>Testando os Formulários</title>
+  </head>
+  <body>
+
+    <form action="formtest.html" method="post">
+
+      Nome:<input type="text" id="nome" /><br /><br />
+      senha:<input type="password" id="senha"><br /><br />
+
+      Que nota você daria Para o curso BSI-UAT ?<br />
+      <input type="radio" name="nota" value="5" />5<br />
+      <input type="radio" name="nota" value="8" />8<br />
+      <input type="radio" name="nota" value="10" />10<br />
+
+      Qual seu professor predileto em SI ?<br />
+      <input type="checkbox" name="professor" value="richarlyson" />Richarlyson<br />
+      <input type="checkbox" name="professor" value="glauber" />Glauber<br />
+      <input type="checkbox" name="professor" value="isledna" />Isledna<br /><br />
+
+      Sua Cidade:<br />
+      <select id="cidade">
+        <option>Carnaíba</option>
+        <option>Afogados</option>
+        <option>Princesa</option>
+      </select><br /><br />
+
+      Estilo de programação preferida:<br />
+      <select id="linguagem">
+        <optgroup label="Back-End">
+          <option>PHP</option>
+          <option>Ruby</option>
+          <option>JSF</option>
+        </optgroup>
+
+        <optgroup label="Front-End">
+          <option>Hmtl5</option>
+          <option>CSS3</option>
+          <option>Javascript</option>
+        </optgroup>
+
+      </select><br /><br /><br />
+
+      Observações:<br />
+      <textarea rows="8" cols="40">Digite Aqui</textarea><br /><br /><br />
+
+      <input type="submit" value="Enviar" />
+      <input type="reset" value="Limpar" />
+
+    </form>
+
+  </body>
+
+</html>

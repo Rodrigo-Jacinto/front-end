@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+
+<html lang="pt-BR">
+
+    <head>
+
+        <title>Mostra dados</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/estilo-mostraDados.css">
+
+    </head>
+
+  <body>
+
+      <header>
+      <span>Armazenamento de Dados</span>
+      </header>
+
+    <form action="#">
+
+        <h1>Digite Seu dados</h1>
+
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" placeholder="Nome" class="campo" required>
+
+        <label for="idade">Idade</label>
+        <input type="number" name="idade" id="idade" class="campo" placeholder="idade" required>
+
+        <input type="radio" name="sexo" id="masculino" value="Masculino" class="sexo"><label>Masculino</label>
+        <input type="radio" name="sexo" id="feminino" value="Feminino" class="sexo"><label>Feminino</label> <br>
+
+        <label>Time de Pernambuco</label> <br>
+
+          <select class="selecTimes" name="time">
+                <option value="Santa Cruz">Santa Cruz</option>
+                <option value="Sport">Sport</option>
+                <option value="Náutico">Náutico</option>
+                <option value="Ferroviário">Ferroviário</option>
+          </select><br>
+
+          <button id="envia" type="button" class="botao">Enviar</button>
+          <button id="removePrimeiro" type="button" class="botao">Remove Primeiro</button>
+          <button id="removeUltimo" type="button" class="botao">Remove Ultimo</button>
+          <button type="reset" name="button" class="botao">Limpa</button>
+
+    </form>
+
+
+  <table border="1" cellpadding="10px">
+
+  <thead>
+    <tr>
+      <th>Nome</th> <th>Idade</th> <th>Sexo</th> <th>Time</th>
+    </tr>
+  </thead>
+
+    <tbody></tbody>
+  </table>
+
+
+    <script src="js\jquery-3.1.1.min.js"></script>
+    <script src="js/mostraDados.js"></script>
+
+  </body>
+</html>

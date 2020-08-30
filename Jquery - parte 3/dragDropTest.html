@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dra Drop Test</title>
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom\jquery-ui.min.css">
+    <script src="jquery-ui-1.12.1.custom\jquery-3.1.1.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom\jquery-ui.min.js"></script>
+
+
+    <script type="text/javascript">
+
+        $(function(){
+
+              $("#lista li").draggable({
+
+                  helper:"clone"
+
+              });
+
+            $("#carrinho ul").droppable({
+
+              drop:function(event, ui){
+
+                    $(this).append($("<li/>").text(ui.draggable.text())),
+                    $(".msg").remove();
+              }
+            });
+
+
+        });
+
+    </script>
+  </head>
+  <body>
+
+
+    <div id="lista">
+      <h2>Lista de Compras</h2>
+        <ul>
+          <li>Sapato</li>
+          <li>Meias</li>
+          <li>Camisas</li>
+          <li>Short</li>
+        </ul>
+
+    </div>
+
+    <div id="carrinho">
+
+    <h2>Carrinho</h2>
+      <ul>
+          <li class="msg">Compras..</li>
+
+      </ul>
+
+    </div>
+
+
+
+  </body>
+</html>

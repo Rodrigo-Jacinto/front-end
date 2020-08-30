@@ -1,0 +1,28 @@
+
+
+.marcador {
+  background:#D24D57;
+  border:1px solid #000;
+}
+
+.marcador2 {
+
+  background: #00B16A;
+  border:1px solid #000;
+
+}
+
+
+li:hover {
+
+  background: red;
+}
+
+.tcor{
+  color:yellow;
+}
+
+.navcor {
+
+  background:rgba(0,0,0,0.8);
+}

@@ -1,0 +1,96 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body {
+  background-color:#ccc;
+}
+
+header {
+  position:relative;
+  width:100%;
+  height:130px;
+  background-color:#3e3e3e;
+  background-image:url(../img/hipsters-header-pattern.png);
+}
+
+header figure img {
+  height:100px;
+}
+
+header figure {
+  width:290px;
+  padding-top:15px;
+  padding-left:50px;
+}
+
+.lista-dispositivos {
+  position: absolute;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  top:30px;
+  right:60px;
+  width:500px;
+}
+
+.lista-dispositivos p {
+  font-family: "Arial Black", sans-serif, serif;
+  font-size: .8em;
+  color:white;
+  cursor:pointer;
+  transition: 1s;
+}
+
+.lista-dispositivos p:hover {
+  color:#446CB3;
+
+}
+
+.tamanho-icon {
+  height:60px;
+}
+
+.pod-principal {
+  width:750px;
+  height:550px;
+  background-color:white;
+  margin: 20px 20px
+
+}
+
+main {
+  float:left;
+  width:calc(100% - 480px);
+}
+
+aside {
+  float:right;
+
+  width:480px;
+}
+
+.bloco-texto {
+  width:420px;
+  height:180px;
+  background-color:white;
+  margin-top: 20px;
+}
+
+.cabecalho-titulo {
+
+  width: 100%;
+  height:48px;
+  border: 1px solid black;
+  text-align: center;
+  padding-top:10px;
+  background-color:#333;
+  color:white;
+
+}
+
+.descricao {
+  padding: 20px;
+}

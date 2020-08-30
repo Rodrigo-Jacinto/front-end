@@ -1,0 +1,22 @@
+.container {
+  background: #ccc;
+  display:flex;
+  align-items:center;
+  justify-content:space-between; /* Faz o elementos ocuparem o espaço do elemento pai */
+  width:50%;
+}
+
+.dois {
+  display:flex;
+  flex-direction: column; /* Muda a direção do objetos, muda para vertical */
+  width:150px;
+  height:150px;
+  background: black;
+}
+
+.dois p {
+  flex:1; /* cria tamanho iguais para os textos */
+  font-weight:bold;
+  font-size:10px;
+  color:white;
+}

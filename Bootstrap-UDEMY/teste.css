@@ -1,0 +1,52 @@
+
+body {
+
+  background-image: url("img/cafe2.png"),
+  linear-gradient(50deg,#ff4169, #7c26f8);
+  background-attachment: fixed;
+}
+
+footer {
+
+  width:100%;
+  height:200px;
+  position:absolute;
+  left: 0;
+  bottom: 0;
+  background: rgb(0,0,0);
+
+}
+
+.ajuste-img {
+  padding: 20px;
+}
+
+
+
+.botoes {
+
+  width:450px;
+  height:110px;
+  text-align: center;
+  padding:20px;
+  border-radius:5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+}
+
+.btn-forma {
+  border:2px solid white;
+  color:white;
+  border-radius:500px;
+  margin:10px;
+  background-color:rgba(180,33,206,0.3);
+
+}
+
+.btn-forma:hover {
+
+  background-color: white;
+  color:black;
+  transition:background 0.5s, color 0.5s;
+
+}

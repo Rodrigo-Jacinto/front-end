@@ -1,0 +1,166 @@
+
+* {
+  box-sizing:border-box;
+}
+
+@font-face {/*Utiliza um font que foi baixa para dentro do arquivos do site, e n precisa está instalada no SO */
+    font-family:"porra";
+    src: url("../font/Pacifico.ttf");
+}
+
+@font-face {
+  font-family:"jacinto";
+  src: url("../font/RockSalt.ttf");
+}
+
+h6 {
+  border-top-right-radius:10px;/*Arredonda as laterais das bordas */
+  border-bottom-left-radius:10px;
+  box-shadow: 5px 0px 5px blue;
+  border:2px solid black;
+  height: 60px;
+  line-height: 50px;
+  text-align: center;
+  width: 190px;
+  font-family: "porra";
+  font-size:40px;
+}
+
+h6:hover {
+  background:black;
+  color:white;
+}
+
+.box {
+  background:red;
+  width:250px;
+}
+
+.box-padding  {
+
+  background:green;
+  width:250px;
+  padding: 0 65px;
+
+}
+
+.curiosidade::before {
+    content:"\261E";
+    margin-right:10px;
+}
+
+
+blockquote::before, blockquote::after {
+    color:#000;
+    font-size:2em;
+
+}
+
+blockquote::before {
+    content:"\201C";
+}
+
+blockquote::after {
+
+  content:"\201D";
+
+}
+
+.nome {
+    text-shadow:5px 5px 5px black;
+}
+
+h1 {
+  font-family:"Press Start 2P";
+}
+
+h3 {
+  font-family:"Bungee Inline";
+}
+
+h4 {
+  font-family:"Lobster";
+}
+
+h5 {
+  font-family:"Yellowtail";
+  font-size:40px;
+}
+
+figure {
+
+    position:relative;
+}
+
+img {
+
+  display:block;
+
+}
+
+figcaption {
+
+  position:absolute;
+  bottom:10px;
+  margin: 0 10px;
+  background:rgba(0,0,0,0.5);
+  color:white;
+  font-size:18px;
+
+}
+
+
+ol {
+
+  border:1px solid rgba(0,0,0,0.5);
+  list-style:none;
+  height:35px;
+  width:210px;
+  padding:0;
+  background:#2980b9;
+  color:white;
+
+}
+
+li {
+
+  border-left:1px solid rgba(255,255,255, 0.3);
+  border-right:1px solid rgba(0,0,0, 0.3);
+  float:left;
+  width:50px;
+  text-align:center;
+  line-height:35px;
+  font-size:0.9em;
+
+}
+
+li:first-child {
+  border-left:none;
+}
+
+li:last-child {
+
+  border-right:none;
+
+}
+
+
+div {
+  width:220px;
+  height:50px;
+  margin-bottom:10px;
+  text-align:center;
+  font-weight:bold;
+  padding:10px;
+}
+
+.gradiente {
+  background-image: linear-gradient(-37deg, #9A12B3, #F62459, #19B5FE);
+  color:white;
+}
+
+.press {
+
+  box-shadow: inset 0 0 10px rgba(0,0,0, 0.5);
+
+}

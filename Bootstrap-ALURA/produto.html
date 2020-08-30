@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width">
+  <meta charset="utf-8">
+  <title>Venda de Produto</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+  <style media="screen">
+  main {
+    margin-top: 80px;
+  }
+
+  .tab-pane {
+    padding: 10px 5px;
+  }
+  </style>
+
+</head>
+<body>
+
+  <header>
+
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+
+      <div class="navbar-header">
+
+        <a href="#" class="navbar-brand">Caelum</a>
+
+        <button class="navbar-toggle" type="button" data-target=".navbar-collapse" data-toggle="collapse">Menu</button>
+
+      </div><!--Fim da navbar-brand-->
+
+      <div class="collapse navbar-collapse">
+
+        <ul class="nav navbar-nav">
+          <li><a href="#novidades">Novidades</a></li>
+          <li><a href="#maisVendidos">Mais Vendidos</a></li>
+
+          <li class="dropdown">
+
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Camisetas
+              <span class="caret"></span>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a href="#">Masculino</a></li>
+              <li><a href="#">Feminino</a></li>
+              <li><a href="#">Infantil</a></li>
+            </ul>
+
+          </li><!-- fim da li dropdown-->
+
+        </ul>
+
+        <form class="navbar-form navbar-right">
+
+          <div class="form-group">
+            <input type="text" class="form-control">
+          </div>
+
+          <button type="button" class="btn btn-default" name="button">Pesquisar</button>
+
+        </form>
+
+      </div><!-- fim da navbar-collapse -->
+
+    </nav>
+
+  </header>
+
+  <main>
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-xs-12 col-sm-4">
+
+          <img src="img/camisa-azul.jpg" class="img-responsive img-thumbnail" alt="Camisa Azul">
+
+        </div>
+
+        <div class="col-sm-8">
+
+          <div class="text-center">
+
+            <h1>Camisa Social Azul</h1>
+            <h2>R$ 190,00</h2>
+            <a href="#" class="btn btn-primary btn-lg">Comprar</a>
+
+          </div>
+
+          <ul class="nav nav-tabs">
+
+            <li class="nav active"><a href="#descricao" data-toggle="tab">Descrição</a></li>
+            
+            <li class="nav"><a href="#informacao" data-toggle="tab">Informações Técnicas</a></li>
+
+          </ul>
+
+          <div class="tab-content">
+
+            <div class="tab-pane fade in active" id="descricao">
+
+              <p>Camisa Azul da Moda, marca thommy, feita no Chile</p>
+
+            </div><!-- fim da tab-pane-->
+
+            <div class="tab-pane fade" id="informacao">
+
+                <table class="table table-responsive">
+                  <tbody>
+                        <tr>
+                          <th>Marca</th>
+                          <td>Thommy</td>
+                        </tr>
+                        <tr>
+                          <th>Preço</th>
+                          <td>R$ 300,00</td>
+                        </tr>
+
+                        <tr>
+                          <th>Tecido</th>
+                          <td>Algodão</td>
+                        </tr>
+
+                        <tr>
+                          <th>Distribuidora</th>
+                          <td>&copy;Moda</td>
+                        </tr>
+
+                  </tbody>
+                </table>
+
+            </div><!-- fim da tab-pane-->
+
+          </div><!-- fim do tab content-->
+
+        </div><!--fim da col-sm-8 -->
+
+      </div><!--fim da Row -->
+
+
+    </div><!--Fim do Cainter -->
+
+
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Introdução a JqueryUI</title>
+
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom\jquery-ui.min.css">
+    <script src="jquery-ui-1.12.1.custom\jquery-3.1.1.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom\jquery-ui.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(function(){
+
+          //Função de data
+          $("#data").datepicker();
+
+          //Funcação data botao
+          $("#dataBtn").datepicker({
+              showOn:"button",
+              buttonImage:"calendar.png",
+              buttonImageOnly:true
+            //$("#dataBtn").datepicker($.datepicker.regional[ "he" ]);
+          });
+
+          //Função auto completar
+          var dados = ["Java", "PHP", "Python", "Ruby"];
+            $("#autoC").autocomplete({
+            source:dados
+          });
+
+
+        });
+
+    </script>
+  </head>
+  <body>
+
+      Data: <input type="text" name="data" id="data"><br><br>
+      <p>Botão-Data:<input type="text" name="data" id="dataBtn" readonly></p><br><br>
+      Auto Completar <input type="text" id="autoC">
+
+  </body>
+</html>

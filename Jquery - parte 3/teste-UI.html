@@ -1,0 +1,56 @@
+<html>
+
+    <head>
+      <title>Teste Jquery-UI</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="jquery-ui-1.12.1.custom\jquery-ui.min.css">
+      <script src="jquery-ui-1.12.1.custom\jquery-3.1.1.min.js"></script>
+      <script src="jquery-ui-1.12.1.custom\jquery-ui.min.js"></script>
+
+      <script>
+
+          $(document).ready(function(){
+
+                $("#data").datepicker({
+
+                    showOn:"button",
+                    buttonImage:"calendar.png",
+                    buttonImageOnly:true
+
+                });
+
+                $("#b").button();
+                $("div").button();
+                $("#bs").click(function(){
+
+                      alert("Deseja Sair");
+
+                });
+
+                var dados = ["Rodrigo", "Robson", "Jacinto", "Jose"];
+                $("#nomes").autocomplete({
+
+                  source:dados
+                })
+
+          });
+
+
+      </script>
+    </head>
+
+
+    <body>
+
+      <label for="data">Data:</label>
+      <input type="text" id="data" name="data" readonly>
+      <a id="b" href="https://www.google.com.br" target="_blank">Ir ao Google</a>
+      <div id='bs'>Botão Sair</div>
+      <a href="#" class="ui-button ui-widget ui-corner-all">teste</a>
+      Auto Complete:<input type="text" id="nomes" name="nomes">
+
+
+    <body>
+
+
+</html>

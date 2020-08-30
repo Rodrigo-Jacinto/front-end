@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Javasrcipt Avançado</title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+
+    <div class="container">
+    <h1>Negociações</h1>
+
+      <form class="form" onsubmit="nc.adiciona(event);">
+
+        <label for="data">Data</label>
+        <input type="date" id="data" class="data" name="data" placeholder="yy/nn/mmmm" required>
+
+        <label for="quantidade">Quantidade</label>
+        <input type="number" id="quantidade" class="quantidade" name="quantidade" value="1" required>
+
+        <label for="valor">Valor</label>
+        <input type="number" id="valor" class="valor" name="valor" value="" placeholder="0,0" required>
+        <button type="submit" class="btn-peq">Incluir</button>
+      </form>
+
+        <div class="botoes">
+            <button type="button" class="btn-gran alinha">Importar Negociações</button>
+            <button type="button" class="btn-peq alinha">Apagar</button>
+        </div>
+
+    <div id="ncView">
+
+    </div>
+
+    </div><!--Fim da Div container -->
+    <script src="model/Negociacao.js"></script>
+    <script src="controller/NegociacaoController.js"></script>
+    <script src="model\listaNegociacao.js"></script>
+    <script src="help\DateHelper.js"></script>
+    <script src="view\NegociacoesView.js"></script>
+    <script>
+        let nc = new NegociacaoController();
+    </script>
+
+  </body>
+</html>

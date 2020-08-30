@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+p {
+  font-family:"courier new";
+  font-style:italic;
+  font-weight:bold;
+  font-variant:small-caps; /*Deixa as lestras em Maiusculo personalizado */
+  font-size:20px;
+
+  text-align:right;
+  text-indent:30px; /*Identa o texto pode ser negativo também */
+  text-decoration:underline;
+  text-transform:lowercase;
+}
+
+p {
+  letter-spacing:2px; /* Cria Um espaçamento entre as Letras */
+  word-spacing:10px; /* Cria um espaçmento entre as as Palavras */
+  line-height:60px; /* Cria espaçamento entre as linhas */
+}
+
+/*
+      ------Transformar textos------
+        text-transform:capitalize;
+
+        -capitalize --Deixa maiusculo aa primeira letra de cada palavra
+        -uppercase -- Deixa tudo Maiusculo
+        -lowercase --Deixa tudo Menusculo
+
+      -------Decoração de Textos-------
+            text-decoration:underline;
+
+            -underline
+            -overline
+            -line-through
+
+    ------------Alinhamento de Texto---------------
+      text-align:center;
+
+      -center
+      -right
+      -left
+      -justify
+
+  -------------Fontes Weight----------
+          font-weight:bold;
+
+          -bold;
+          -lighter
+          -normal
+          -100 á 900
+
+ ------------Estilos de Fontes------------
+        font-style:italic;
+
+        -italic
+        -normal
+        -oblique
+
+----- 9 FONTES SEGURAS--------
+
+    -Arial
+    -Arial Black
+    -Comic sans MS
+    -courier New
+    -Impact
+    -Times New Roman
+    -Trebuchet MS
+    -Verdana
+
+--------Fontes Genéricas----------
+
+      -serif
+      -sans-serif
+      -cursive
+      -fantasy
+      -monospace
+*/

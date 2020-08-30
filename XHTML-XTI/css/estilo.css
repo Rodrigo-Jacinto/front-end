@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/* Ficccao.html */
+p, h1 {
+  text-align:center;
+  color:blue;
+
+}
+
+h1{
+
+    background-color:#CCCCCC;
+    background-image:url("css3.jpg");
+    background-repeat:no-repeat;
+    background-position:10px;
+
+    border-bottom:1px solid black;
+    border-left:10px solid black;
+    border-top:1px solid black;
+
+    padding:15px;
+
+}
+
+h1:hover {
+
+  color:red;
+  background-color:#8866AA;
+  background-image:url("css4.jpg");
+
+
+}
+
+#texto {
+
+  font-family:"Arial Black";
+  font-size:20px;
+  font-weight:lighter;
+  font-style:italic;
+  font-variant:small-caps;
+
+  text-align:center;
+  text-indent:10px;
+  text-decoration:underline;
+  text-transform:lowercase;
+
+  letter-spacing:3px;
+  word-spacing:40px;
+  line-height:50px;
+
+}
+
+ul {
+  list-style:none;
+}
+
+a {
+  text-decoration:none;
+  color:black;
+
+}
+
+li {
+  width:100px;
+  border:1px solid black;
+}
+
+a > li:hover {
+
+  background-color:black;
+  color:white;
+
+}

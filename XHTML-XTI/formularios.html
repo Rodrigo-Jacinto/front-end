@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+  <head>
+
+    <title>Fomulários</title>
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+    <!-- tabindex="2" sever pra mudar a ordem dos campos usando tabindex
+        EX:. <input type="text" id="nome" tabindex="2" />
+
+        accesskey="N" adiciona um comando para acessar um campo do form
+
+        disabled="disabled" Desabilita o campo, não envia o valor do form indicado
+        <input type="text" id="nome" value="Rodrigo" disabled="disabled" />
+
+        readonly="readonly" Desabilita a alteração do valor no campo, envia o valor do campo
+          <input type="text" id="nome" value="Rodrigo" readonly="readonly" />
+
+        type="hidden" envia um valor, sem ser mostrado na interface
+        <input type="hidden" id="chave" value="123" />
+
+    -->
+      <form action="formularios.html" method="post">
+
+        <fieldset>
+          <legend>Informações Pessoais</legend>
+
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" /><br /><br />
+
+          <label for="senha">Senha:
+            <input type="password" id="senha" /><br />
+          </label>
+
+          Sexo:<br />
+          <input type="radio" name="sexo" value="m" />Masculino<br />
+          <input type="radio" name="sexo" value="f" />Feminino<br /><br />
+        </fieldset>
+
+        Conhecimentos:<br />
+        <input type="checkbox" name="conhecimentos" value="java" />Java<br />
+        <input type="checkbox" name="conhecimentos" value="html" />HTML5<br />
+        <input type="checkbox" name="conhecimentos" value="css" />CSS3<br />
+        <input type="checkbox" name="conhecimentos" value="javascript" />Javascript<br /><br />
+
+        Curriculo:<br />
+        <input type="file" id="curriculo" /><br /><br />
+
+        Seleciona Item:<br />
+        <select id="pais">
+          <option value="br">Brasil</option>
+          <option>EUA</option>
+          <option>China</option>
+          <option>França</option>
+        </select><br /><br />
+
+        Grupo de Seleçoes:<br />
+        <select id="ma">
+
+          <optgroup label="Motorola">
+            <option>Moto G</option>
+            <option>Moto X</option>
+            <option>Moto Max</option>
+          </optgroup>
+          <optgroup label="Asus">
+            <option>Zenfone 2</option>
+            <option>Zenfone 3</option>
+            <option>Zenfone Deluxe</option>
+          </optgroup>
+
+        </select><br /><br />
+
+        Digite Informações:<br />
+        <textarea rows="8" cols="40">Digite Aqui</textarea><br /><br /><br />
+
+        Botões:<br />
+        <input type="submit" value="enviar" /><br /><br />
+        <input type="reset" value="limpar" /><br /><br />
+        <input type="button" value="Valida Formulario" /><br /><br />
+      </form>
+
+  </body>
+
+</html>

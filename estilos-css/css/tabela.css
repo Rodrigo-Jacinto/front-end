@@ -1,0 +1,20 @@
+table, tr, td, th {
+
+  border: 1px solid red;
+}
+
+table {
+  border-collapse: collapse; /*Cria Apenas uma borda para tabela */
+}
+
+
+table {
+
+  width: 100%;
+}
+
+th,td {
+
+  height:50px;
+  vertical-align: bottom; /*Alinha o conteúdo verticalmente*/
+}

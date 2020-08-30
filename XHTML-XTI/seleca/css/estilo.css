@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+body {
+    background-image:url("../img/fundo.jpg");
+
+}
+
+#cabecalho {
+
+  position:relative;
+  background-color:#3f493d;
+  border-bottom:1px solid;
+  height:100px;
+  font-family:"arial black";
+
+}
+
+#cabecalho > h1 {
+
+    position:absolute;
+    left:430px;
+    color:#d256cb;
+}
+
+#esquerda > ul {
+    list-style-type:none;
+}
+
+li{
+
+  font-family:"Comic sans Ms";
+  font-size:27px;
+  color:#23e114;
+
+}
+
+ li > a {
+    text-decoration:none;
+    color:#23e114;
+}
+#geral {
+
+    background-color:#3f493d;
+    position:relative;
+    border:5px ridge #0fc328;
+    width:990px;
+    margin:0 auto;
+    border-radius:10px;
+    box-shadow:10px 10px #7ec76a;
+}
+
+#esquerda {
+    position:absolute;
+    top:130px;
+    left:0;
+    width:170px;
+    background-color:#3f493d;
+}
+
+#direita {
+  position:absolute;
+  top:130px;
+  right:0;
+  width:230px;
+
+}
+
+#conteudo {
+    text-align:center;
+    margin:1px 195px;
+    width:550px;
+    border-left:4px ridge #0fc328;
+    border-right:4px ridge #0fc328;
+    border-top:4px ridge #0fc328;
+}
+
+#rodape {
+  clear:both;
+}

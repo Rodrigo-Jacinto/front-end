@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Javasrcipt Avançado</title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+
+    <div class="container">
+    <h1>Negociações</h1>
+
+      <form class="form">
+
+        <label for="data">Data</label>
+        <input type="date" id="data" class="data" name="data" placeholder="yy/nn/mmmm" required>
+
+        <label for="quantidade">Quantidade</label>
+        <input type="number" id="quantidade" class="quantidade" name="quantidade" value="1" required>
+
+        <label for="valor">Valor</label>
+        <input type="number" id="valor" class="valor" name="valor" value="" placeholder="0,0" required>
+        <button type="submit" class="btn-peq">Incluir</button>
+      </form>
+
+        <div class="botoes">
+            <button type="button" class="btn-gran alinha">Importar Negociações</button>
+            <button type="button" class="btn-peq alinha">Apagar</button>
+        </div>
+
+
+        <table>
+
+          <thead>
+                <th>DATA</th>
+                <th>QUANTIDADE</th>
+                <th>VALOR</th>
+                <th>VOLUME</th>
+          </thead>
+
+          <tbody>
+
+          </tbody>
+
+        </table>
+
+    </div><!--Fim da Div container -->
+    <script src="model/Negociacao.js"></script>
+    <script type="text/javascript">
+
+            //Para variaveis globais use var numero = 10;
+            //Para variaveis locais use let numero = 10;
+            var hoje = new Date();
+            var n1 = new Negociacao(hoje, 5, 700);
+
+            console.log(n1.data);
+
+            hoje.setDate(33);
+            n1.data.setDate(17);
+
+            console.log(n1.data);
+            console.log(n1.quantidade);
+            console.log(n1.valor);
+
+          for(let i = 0; i <=100; i++){
+
+            console.log(i);
+          }
+
+
+
+    </script>
+
+  </body>
+</html>

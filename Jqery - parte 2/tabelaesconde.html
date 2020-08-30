@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mais e Menos Tabelas</title>
+
+    <style media="screen">
+
+      table {
+        margin: 10px auto;
+      }
+
+      .sub {
+
+        background: #CCC;
+      }
+
+      thead tr {
+
+        background-color: black;
+        color:white;
+      }
+    </style>
+
+  </head>
+  <body>
+
+  <table border="1" cellpadding="15px">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Time</th>
+      </tr>
+    </thead>
+      <tbody>
+        <tr class="sub">
+          <th colspan="3">Jogadores nos Times Brasileiros</th>
+        </tr>
+        <tr>
+          <td>Ceuva</td>
+          <td>28</td>
+          <td>São Pualo</td>
+        </tr>
+
+        <tr>
+          <td>Guerreiro</td>
+          <td>28</td>
+          <td>Flamengo</td>
+        </tr>
+
+        <tr class="sub">
+          <th colspan="3">Jogadores nos Times Europeus</th>
+        </tr>
+
+        <tr>
+          <td>Neymar</td>
+          <td>24</td>
+          <td>Barcelona</td>
+        </tr>
+
+        <tr>
+          <td>Messi</td>
+          <td>28</td>
+          <td>Barcelona</td>
+        </tr>
+      </tbody>
+
+  </table>
+
+  <script src="js\jquery-3.1.1.min.js"></script>
+  <script src="js\exemplos\tabelaesconde.js"></script>
+  </body>
+</html>

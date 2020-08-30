@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Amigo Torcedor</title>
+  </head>
+  <body>
+
+      <form action="formulario.html" method="post">
+
+        <fieldset>
+          <legend>Informações Pessoais</legend>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" /><br /><br />
+
+          <label for="senha">Palavra Secreta</label>
+          <input type="password" id="senha" /><br /><br />
+
+          <input type="radio" name="sexo" value="m" />Masculino<br />
+          <input type="radio" name="sexo" value="f" />Feminino<br /><br />
+
+          Mande Sua Foto:<br />
+          <input type="file" id="foto" />
+
+      </fieldset><br />
+
+        <fieldset>
+        <h3>Qual jogador da Seleção você mais gosta ?</h3><br />
+        <input type="checkbox" name="jogador" value="neymar" />Neymar<br />
+        <input type="checkbox" name="jogador" value="Gabriel Jesus" />Gabriel Jesus<br />
+        <input type="checkbox" name="jogador" value="Gabi Gol" />Gabi Gol<br /><br />
+
+
+        <select id="seleca">
+          <option>Brasil</option>
+          <option>Argentina</option>
+          <option>Alemanha</option>
+          <option>França</option>
+        </select><br /><br /><br />
+
+
+        <legend>Torcedor</legend>
+        Escolha Seu jogador:<br />
+        <select id="jogadores">
+          <optgroup label="Brasil">
+            <option>Escolha</option>
+            <option>Neymar</option>
+            <option>Gabi gol</option>
+            <option>Miranda</option>
+          </optgroup>
+          <optgroup label="Argentina">
+            <option>Messi</option>
+            <option>Di Maria</option>
+            <option>Veron</option>
+          </optgroup>
+          </select>
+        </fieldset>
+
+          <h3>Sugestão do Admin</h3><br />
+          Nome do Admin:<input type="text" id="nome" value="Rodrigo Jacinto" disabled="disabled" /><br /><br />
+          Jogador Preferido:<input type="text" id="jogador" value="Neymar" readonly="readonly" /><br /><br />
+          Seleção Predileta:<input type="text" id="selecao" value="Brasil" readonly="readonly" /><br /><br />
+
+
+          Observações:<br />
+          <textarea cols="20" rows="10">Digite Aqui</textarea><br /><br />
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Limpar" />
+
+
+
+      </form>
+
+
+  </body>
+</html>

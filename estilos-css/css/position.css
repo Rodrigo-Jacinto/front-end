@@ -1,0 +1,75 @@
+@charset "UTF-8";
+div {
+  position:relative; /*Se posiciona na tela com relção a si mesmo*/
+  border:2px solid blue;
+  height:1500px;
+}
+
+h3 {
+  border:1px solid black;
+}
+
+#dois {
+  position:fixed;
+  left:0px;
+  top:0px;
+}
+
+
+.pai {
+  
+  position:relative;
+  border: 1px solid black;
+  width: 300px;
+  height:120px;
+  
+}
+
+.filho {
+    
+  position:absolute; /*Se posiciona com relação ao seu pai com position:absolute*/
+  bottom:0;
+  right:0;
+  border: 2px ridge red;
+  width: 100px;
+  height:50px;
+  
+}
+
+
+/*
+h1,h3, p{
+
+  border:1px solid blue;
+  width:200px;
+  float:left;
+
+}
+
+h3 {
+
+  clear:both
+}
+
+
+span {
+
+Mais Utilizadas em blocos inline
+  position:relative;
+  left:11px;
+  top:40px;
+
+}
+
+    -------Posicionamento------------
+
+      float:
+      -left
+      -right
+
+      position:relative;
+
+      position:absolute
+      - top
+      - left
+*/

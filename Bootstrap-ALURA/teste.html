@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width">
+  <meta charset="utf-8">
+  <title>Entendendo Nossa Galáxia</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<style>
+
+.navbar-header button {
+  color:white;
+}
+
+.img-tamanho {
+  height:50px;
+  display: block;
+}
+
+.posi {
+  padding: 5px;
+}
+
+body {
+
+  background: url("img/universo.png") no-repeat center center;
+  background-attachment:fixed;
+  background-size: cover;
+
+}
+
+.fundo-planeta {
+  background-color: #fff;
+}
+.img-largura {
+  width: 100%;
+}
+</style>
+
+<body>
+  <header>
+    <nav class="navbar navbar-inverse">
+
+      <div class="navbar-header">
+
+        <a href="#" class="posi navbar-brand"><img class="img-tamanho" src="img/lua.svg" alt=""></a>
+
+        <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">Menu</button>
+
+      </div><!-- Fim de navbar-header -->
+
+      <div class="collapse navbar-collapse">
+
+        <ul class="nav navbar-nav">
+          <li><a href="#">Estrelas</a></li>
+          <li><a href="#">Satélites</a></li>
+          <li><a href="#">Galáxias</a></li>
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+  <main>
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-4 thumbnail fundo-planeta text-center">
+          
+          <figure>
+            <img src="img/marte.jpg" class="img-largura img-responsive" alt="planeta marte">
+          </figure>
+
+          <h4>Marte</h4>
+          <p>Marte um planeta que está á 150000 km da terra é vermelho</p>
+
+        </div>
+
+        <div class="col-md-4 thumbnail fundo-planeta text-center">
+          <figure>
+            <img src="img/marte.jpg" class="img-largura img-responsive" alt="planeta marte">
+          </figure>
+
+          <h4>Marte</h4>
+          <p>Marte um planeta que está á 150000 km da terra é vermelho</p>
+        </div>
+
+        <div class="col-md-4 thumbnail fundo-planeta text-center">
+          <figure>
+            <img src="img/marte.jpg" class="img-largura img-responsive" alt="planeta marte">
+          </figure>
+
+          <h4>Marte</h4>
+          <p>Marte um planeta que está á 150000 km da terra é vermelho</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

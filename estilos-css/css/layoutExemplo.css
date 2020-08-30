@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/*Bom para ajustar o layout na hora da criação
+div{
+
+  border: 1px solid black;
+
+}
+*/
+ul {
+  list-style-type:none;
+}
+
+#geral {
+  width:900px;
+  margin:0 auto;
+}
+
+#cabecalho {
+    height:100px;
+    background-color:#DDDDDD;
+}
+
+#esquerda {
+  float:left;
+  width:130px;
+}
+
+#conteudo {
+  float:right;
+  width:460px;
+}
+
+#conteudo > #princi {
+  position:relative;
+  right:190px;
+  width:450px;
+  text-align:center;
+  line-height:25px;
+}
+
+#conteudo > #direita {
+  position:relative;
+  bottom:678px;
+  left:325px;
+  width:130px;
+}
+
+#rodape {
+  clear:both;
+  background-color:blue;
+  height:150px;
+}

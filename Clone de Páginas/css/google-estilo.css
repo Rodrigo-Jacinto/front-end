@@ -1,0 +1,90 @@
+* {
+    box-sizing:border-box;
+}
+
+html, body {
+    padding:0;
+    margin:0;
+}
+
+main {
+
+    position:relative;
+    margin: 15% auto;
+    width:600px;
+    height:300px;
+
+}
+
+.logo-google {
+
+  font-size:80px;
+  text-align:center;
+  display:block;
+  margin-bottom:28px;
+}
+
+.idioma-logo {
+
+  font-family:arial;
+  font-size:20px;
+  color:#4285F4;
+  position:absolute;
+  left:362px;
+  top:76px;
+
+}
+
+.campo-pesquisa {
+
+    width:495px;
+    height:35px;
+    margin:0 auto;
+    display:block;
+    box-shadow:5px 5px 5px #bdc3c7;
+
+}
+
+.campo-pesquisa:focus {
+
+}
+
+.g {
+
+  color:#4285F4;
+}
+
+.o-one, .e {
+
+  color:#EA4335;
+}
+
+.o {
+
+  color:#FBBC05;
+}
+
+.l {
+
+  color:#34A853;
+}
+.btn {
+
+      text-align: center;
+      margin-top:30px;
+}
+
+.btn-pesquisa, .btn-sorte {
+
+    display:inline-block;
+    background-color:#F1F1F1;
+    border-color:#F6F6F6;
+    padding-top:10px;
+    width:150px;
+    height:40px;
+}
+a {
+
+  text-decoration:none;
+  color:#222222;
+}

@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 130px;
+  background-image:-webkit-linear-gradient(top, #1E8BC3,#1F3A93);
+  box-shadow: 0 0 10px black;
+  text-align:center;
+  padding-top:50px;
+}
+
+h1 {
+  text-shadow: 0 0 3px black;
+  font-family:"Arial";
+  font-weight:bold;
+  color:white;
+}
+
+.fundo-botoes {
+  background-image: -webkit-linear-gradient(top, #1F3A93, #1E8BC3);
+  width: 400px;
+  height: 350px;
+  margin: 7% auto;
+  padding-top: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px black;
+  border: 10px ridge #19B5FE;
+}
+
+.grupo-botoes {
+  width:155px;
+  margin: 0 auto;
+}
+
+.grupo-botoes a {
+  text-align: center;
+  padding-top:15px;
+  width: 150px;
+  height:50px;
+  text-decoration:none;
+  text-shadow: 0 0 3px black;
+  font-family:"Arial";
+  font-weight:bold;
+  color:white;
+  border-radius: 3px;
+  background-image:-webkit-linear-gradient(top, #1E8BC3,#1F3A93);
+}
+
+.grupo-botoes a ~ a {
+  margin-top: 35px;
+}
+
+.grupo-botoes a:hover {
+  color:#CCC;
+  box-shadow: 0 0 10px white;
+}
+
+a {
+  border: 3px solid black;
+  display: block;
+}

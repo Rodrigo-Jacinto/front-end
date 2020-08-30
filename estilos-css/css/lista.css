@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+ul{
+  list-style-type:none;
+  list-style-image:url("img/seta.png");
+  list-style-position:inside;
+}
+
+/* -------Estilos de Lista------------------
+ul {
+list-style-type:
+
+- circle
+- disc
+- square
+
+- decimal
+- decimal-leading-zero
+
+- lower-greek
+
+- lower-latin
+- upper-latin
+
+- lower-roman
+- upper-roman
+
+- georgian
+- armenian
+- none
+
+ - inherit;
+
+   list-style-position:
+   - inside
+   - outside
+
+
+}
+*/

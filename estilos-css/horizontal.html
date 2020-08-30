@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Menus</title>
+
+    <link rel="stylesheet" type="text/css" href="css/menu2.css" media="all" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+      <script type="text/javascript">
+
+      $(document).ready(function(){
+
+            $("#menu li ul").hide();
+            $("#menu li").hover(
+
+            function(){$(this).children("ul").show();},
+            function(){$(this).children("ul").hide();}
+          );
+      });
+    </script>
+
+  </head>
+
+    <body>
+
+        <ul id="menu">
+            <li>Home</li>
+            <li>Suporte
+            <li>Home</li>
+            <li>Suporte
+
+              <ul>
+                <li>Home</li>
+                <li>Suporte
+                  <ul>
+                    <li>Home</li>
+                    <li>Suporte</li>
+                    <li>Forum</li>
+                    <li>Download</li>
+                  </ul>
+                </li>
+                <li>Forum</li>
+                <li>Download</li>
+              </ul>
+            </li>
+
+
+
+            <li>Forum</li>
+            <li>Download</li>
+        </ul>
+
+    </body>
+
+
+</html>

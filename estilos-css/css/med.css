@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+h1 {
+    font-size:60px;
+}
+
+h2 {
+  font-size:20px;
+}
+
+h1, h2 {
+
+  margin-left:3em; /* multiplica pelo valor já definido para da a margem Ex: <h1> 60 x 1; */
+                  /* A unidade "em" pode ser usada com numero quebrado EX: 0.5em */
+}
+
+/*
+
+----Medidas Absolutas---
+   Pouco Utilizada
+
+    5in
+    5cm
+    5mm
+    5pt -- Mais usada
+    5pc
+
+-------Medidas Relativas------
+  Mais Utilizadas
+
+    5em -- essa
+    5ex
+    5px-- essa
+
+    -----Medidas em Porcentagem-----
+      5%-- essa

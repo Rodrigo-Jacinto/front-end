@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Elementos em Button</title>
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom\jquery-ui.min.css">
+    <script src="jquery-ui-1.12.1.custom\jquery-3.1.1.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom\jquery-ui.min.js"></script>
+
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+
+        $("a").button({
+
+          icons:{primary:"ui-icon-tag"},
+          //text:false - Retira o texto do link
+
+        });
+
+        $(":input").checkboxradio();
+
+
+      });
+
+    </script>
+
+
+  </head>
+
+  <body>
+
+      <a href="#">Link em Botão</a><br><br>
+      <label for="java">Java</label>
+      <input type="checkbox" name="java" id="java" value="">
+
+      <label for="lua">Lua</label>
+      <input type="checkbox" name="lua" id="lua" value=""><br><br>
+
+      <label for="my">Mysql</label>
+      <input name="banco" type="radio" id="my"><br>
+      <label for="post">PostgreeSql</label><input name="banco" type="radio" id="post"><br>
+      <label for="mongo">Mongo BD</label><input name="banco" type="radio" id="mongo"><br>
+
+  </body>
+</html>

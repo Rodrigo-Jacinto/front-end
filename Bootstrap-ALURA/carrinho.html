@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width">
+  <meta charset="utf-8">
+  <title>Venda de Produto</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+  <style media="screen">
+  main {
+    margin-top: 80px;
+  }
+
+  .tab-pane {
+    padding: 10px 5px;
+  }
+  </style>
+
+</head>
+<body>
+
+  <header>
+
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+
+      <div class="navbar-header">
+
+        <a href="#" class="navbar-brand">Caelum</a>
+
+        <button class="navbar-toggle" type="button" data-target=".navbar-collapse" data-toggle="collapse">Menu</button>
+
+      </div><!--Fim da navbar-brand-->
+
+      <div class="collapse navbar-collapse">
+
+        <ul class="nav navbar-nav">
+          <li><a href="#novidades">Novidades</a></li>
+          <li><a href="#maisVendidos">Mais Vendidos</a></li>
+
+          <li class="dropdown">
+
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Camisetas
+              <span class="caret"></span>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a href="#">Masculino</a></li>
+              <li><a href="#">Feminino</a></li>
+              <li><a href="#">Infantil</a></li>
+            </ul>
+
+          </li><!-- fim da li dropdown-->
+
+        </ul>
+
+        <form class="navbar-form navbar-right">
+
+          <div class="form-group">
+            <input type="text" class="form-control">
+          </div>
+
+          <button type="button" class="btn btn-default" name="button">Pesquisar</button>
+
+        </form>
+
+      </div><!-- fim da navbar-collapse -->
+
+    </nav>
+
+  </header>
+
+  <main>
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-xs-12 col-sm-4">
+
+          <div class="panel panel-default">
+
+            <div class="panel-heading text-center">
+
+              <h1 class="panel-title">Sua Compra</h1>
+              
+            </div><!-- fim do painel-heading -->
+
+            <div class="panel-body">
+
+              <img src="img/camisa-azul.jpg" class="img-responsive img-thumbnail" alt="Camisa Azul">
+
+              <dl>
+                <dt>Nome</dt>
+                <dd>Camiseta Azul</dd>
+
+                <dt>Preço</dt>
+                <dd>R$ 190,00</dd>
+
+                <dt>Tamanho</dt>
+                <dd>M</dd>
+
+              </dl>
+
+            </div><!--fim do painel-body -->
+
+          </div><!--fim do painel-default-->
+
+        </div><!-- fim da col-sm-4-->
+
+        <div class="col-sm-8">
+
+          <form action="index.html" method="post">
+
+            <fieldset>
+
+              <legend>Informações do Usuário</legend>
+
+              <div class="form-group">
+
+                <label>
+                  Nome:
+                </label>
+                <input type="text" class="form-control">
+
+              </div><!-- fim do form group -->
+
+              <div class="form-group">
+
+                <label>Email</label>
+
+                <div class="input-group">
+                  <span class="input-group-addon">@</span>
+                  <input type="email" class="form-control">
+                </div>
+
+              </div><!-- fim do form group -->
+
+              <div class="form-group">
+
+                <label>
+                  CPF:
+                </label>
+                <input type="text" class="form-control">
+
+              </div><!-- fim do form group -->
+
+              <div class="checkbox">
+
+                <label>
+                  <input type="checkbox" checked value="sim">
+                  Receber novidades da Loja
+                </label>
+
+              </div><!-- fim do form group -->
+
+            </fieldset>
+
+            <fieldset>
+
+              <legend>Formas Pagamento</legend>
+
+              <div class="form-group">
+
+                <label for="bandeira">Bandeira</label>
+
+                <select id="bandeira" class="form-control">
+                  <option value="master">MasterCard</option>
+                  <option value="visa">Visa</option>
+                  <option value="bb">BBgold</option>
+                </select>
+
+              </div><!-- form-group -->
+
+              <div class="form-group">
+
+                <label>Número</label>
+                <input type="text" class="form-control">
+
+              </div><!-- form-group -->
+
+              <div class="form-group">
+
+                <label>Validade</label>
+                <input type="month" class="form-control">
+
+              </div><!-- form-group -->
+
+              <div class="form-group">
+
+                <label>CVV</label>
+                <input type="text" maxlength="3" class="form-control">
+
+              </div><!-- form-group -->
+
+              <button type="submit" class="btn btn-primary btn-lg">
+
+                <span class="glyphicon glyphicon-thumbs-up"></span>
+                Confirmar Pedido
+              </button>
+
+              <button type="button" name="button">
+                <span class="glyphicon"></span>
+              </button>
+
+            </fieldset>
+
+          </form>
+
+        </div><!--fim da col-sm-8 -->
+
+      </div><!--fim da Row -->
+
+    </div><!--Fim do Container -->
+
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

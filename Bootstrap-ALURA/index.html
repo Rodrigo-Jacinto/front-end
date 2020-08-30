@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width">
+  <meta charset="utf-8">
+  <title>Bootstrap</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css-wow/libs/animate.css">
+
+  <style media="screen">
+
+  .navbar-header button {
+    color:#fff;
+  }
+
+  .fullscreen {
+    width:100%;
+  }
+
+  main {
+    padding-top:51px;
+  }
+
+  footer {
+    background:#333;
+    color:white;
+    text-align:center;
+    padding: 20px 0;
+  }
+
+  .cor-red {
+    color:black;
+  }
+
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+
+      <div class="navbar-header">
+
+        <a href="#" class="navbar-brand">Caelum</a>
+
+        <button class="navbar-toggle" type="button" data-target=".navbar-collapse" data-toggle="collapse">Menu</button>
+
+      </div><!--Fim da navbar-brand-->
+
+      <div class="collapse navbar-collapse">
+
+        <ul class="nav navbar-nav">
+          <li><a href="#novidades">Novidades</a></li>
+          <li><a href="#maisVendidos">Mais Vendidos</a></li>
+
+          <li class="dropdown">
+
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Camisetas
+              <span class="caret"></span>
+            </a>
+
+            <ul class="dropdown-menu">
+
+              <li><a href="#">Masculino</a></li>
+              <li><a href="#">Feminino</a></li>
+              <li><a href="#">Infantil</a></li>
+
+            </ul>
+
+          </li><!-- fim da li dropdown-->
+
+        </ul>
+
+        <form class="navbar-form navbar-right">
+
+          <div class="form-group">
+            <input type="text" class="form-control">
+          </div>
+
+          <button type="button" class="btn btn-default" name="button">Pesquisar</button>
+
+        </form>
+
+      </div><!-- fim da navbar-collapse -->
+
+    </nav>
+
+  </header>
+
+  <main>
+
+    <div class="container-fluid">
+
+      <div class="row">
+
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+
+          <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+              <img src="img/banner1.png" class="fullscreen" alt="Banner Moda">
+            </div>
+
+            <div class="item">
+              <img src="img/banner2.png" class="fullscreen" alt="Banner Moda">
+            </div>
+
+          </div><!--fim da div carousel-inner -->
+
+          <a href="#carousel" class="left carousel-control" data-slide="prev">
+            <span class="cor-red glyphicon glyphicon-chevron-left"></span>
+          </a>
+
+          <a href="#carousel" class="right carousel-control" data-slide="next">
+            <span class="cor-red glyphicon glyphicon-chevron-right"></span>
+          </a>
+
+        </div><!--fim da div carousel slide -->
+
+      </div><!--fim da row -->
+
+    </div><!--Fim do Container fluid -->
+
+    <div class="container-fluid">
+
+      <div class="row">
+
+        <div class="col-xs-12 col-sm-3">
+
+          <div class="text-center">
+            <h3>Caregorias</h3>
+          </div>
+
+          <ul class="list-group">
+            <li class="list-group-item"><a href="#">Camisetas Masculinas</a></li>
+            <li class="list-group-item"><a href="#">Camisetas Femininas</a></li>
+            <li class="list-group-item"><a href="#">Roupas de Inverno</a></li>
+            <li class="list-group-item"><a href="#">Roupas de Verão</a></li>
+          </ul>
+
+        </div><!-- Fim da col Categorias -->
+
+        <div class="col-xs-12 col-sm-9">
+
+          <div id="novidades">
+            <h1 class="text-center">Novidades</h1>
+          </div>
+
+          <div data-wow-delay="1s" class="wow bounceInDown col-md-4 thumbnail text-center">
+
+            <figure>
+
+              <img src="img/camisa-azul.png" alt="Camisa Azul">
+
+              <div>
+                <p>Camisa Azul de marca com preço <br>acessivel com pano de qualidade</p>
+              </div>
+
+            </figure>
+
+            <p>R$ 190,00</p>
+            <a href="produto.html" class="btn btn-primary">Comprar</a>
+
+          </div>
+
+          <div data-wow-delay="1s" class="wow fadeInUp col-md-4 thumbnail text-center">
+
+            <figure>
+
+              <img src="img/camisa-rosa.png" alt="Camisa Azul">
+
+              <div>
+                <p>Camisa rosa de marca com preço <br>acessivel com pano de qualidade</p>
+              </div>
+
+            </figure>
+
+            <p>R$ 290,00</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+
+          </div>
+
+          <div data-wow-delay="1s" class="wow fadeInUp col-md-4 thumbnail text-center">
+
+            <figure>
+
+              <img src="img/camisa-preta.png" alt="Camisa Azul">
+
+              <div>
+                <p>Camisa Preta de marca com preço <br>acessivel com pano de qualidade</p>
+              </div>
+
+            </figure>
+
+            <p>R$ 90,00</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+
+          </div>
+
+        </div><!--fim da col -->
+
+        <div id="maisVendidos">
+          <h1 class="text-center">Mais Vendidos</h1>
+        </div>
+
+        <div data-wow-delay="1s" class="wow bounceInDown col-md-4 thumbnail text-center">
+
+          <figure>
+
+            <img src="img/camisa-azul.png" alt="Camisa Azul">
+
+            <div>
+              <p>Camisa Azul de marca com preço <br>acessivel com pano de qualidade</p>
+            </div>
+
+          </figure>
+
+          <p>R$ 190,00</p>
+          <a href="#" class="btn btn-primary">Comprar</a>
+
+        </div>
+
+        <div data-wow-delay="1s" class="wow fadeInUp col-md-4 thumbnail text-center">
+
+          <figure>
+
+            <img src="img/camisa-rosa.png" alt="Camisa Azul">
+
+            <div>
+              <p>Camisa rosa de marca com preço <br>acessivel com pano de qualidade</p>
+            </div>
+
+          </figure>
+
+          <p>R$ 290,00</p>
+          <a href="#" class="btn btn-primary">Comprar</a>
+
+        </div>
+
+        <div data-wow-delay="1s" class="wow fadeInUp col-md-4 thumbnail text-center">
+
+          <figure>
+
+            <img src="img/camisa-preta.png" alt="Camisa Azul">
+
+            <div>
+              <p>Camisa Preta de marca com preço <br>acessivel com pano de qualidade</p>
+            </div>
+
+          </figure>
+
+          <p>R$ 90,00</p>
+          <a href="#" class="btn btn-primary">Comprar</a>
+
+        </div>
+
+      </div><!-- Fim da Row Categorias -->
+
+    </div><!--Fim do Container fluid -->
+
+  </main>
+
+  <footer>
+    Carnaíba-Pernambuco <br>
+    (87) 9 9956-3159
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="dist-wow/wow.min.js"></script>
+
+  <script type="text/javascript">
+
+  $(function(){
+    new WOW().init();
+  });
+
+  </script>
+
+</body>
+</html>

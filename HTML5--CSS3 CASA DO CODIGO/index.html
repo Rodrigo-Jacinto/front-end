@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+
+    <title>Página de Aprendizagem</title>
+    <meta name="author" content="Rodrigo Jacinto">
+    <meta name="description" content="página apenas para fins educativos">
+    <script>
+      function load() {      
+        const btnEl = document.getElementById("btn");
+        btnEl.addEventListener('click', function(){
+        window.alert('vc clicou no botão');
+      })
+    }
+  </script>
+  
+  </head>
+
+  <body onload="load()">
+    <h1 style="border: 1px solid black;">Elemento Block</h1>
+    <p>
+      rodrigo jacinto da silva, eu já estudei 
+      <a href="https://vuejs.org" target="_blank" title="home page site vue">vue.js</a>
+      <p style="background: #5aa;">elemento inline</p> ÔNIBUS &apos;
+    </p>
+
+    <textarea></textarea>
+
+    <button id="btn">Click</button>
+  
+  </body>
+</html>

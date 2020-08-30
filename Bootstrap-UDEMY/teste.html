@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Bootstrap Template</title>
+
+  <!-- Bootstrap -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="teste.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+
+      <section class="container">
+
+              <div class="navbar-header">
+                    <a href="" class="navbar-brand">
+                        Trabalha Pajeú
+                        <span style="color:blue;font-size:20px;" class="glyphicon glyphicon-euro"></span>
+                    </a>
+              </div>
+
+
+          <ul class="nav navbar-nav navbar-right">
+
+              <li class="dropdown">
+
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">Sexo</a>
+
+                <ul class="dropdown-menu">
+                        <li><a href="">Masculino</a></li>
+                        <li><a href="">Feminino</a></li>
+                </ul>
+
+              </li>
+
+              <li><a href="" data-toggle="modal" data-target="#logar">Logar</a></li>
+                <li><a href="" data-toggle="modal" data-target="#cadastrar">Cadastra-se</a></li>
+          </ul>
+
+
+      </section>
+
+    </nav>
+
+    <main class="container">
+
+            <div class="botoes">
+                 <a href="#" class="btn btn-forma btn-lg">Arrume Emprego</a>
+                 <a href="#" class="btn btn-forma btn-lg">Para sua Empresa</a>
+            </div>
+
+    </main>
+
+
+    <footer>
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-md-3">
+            <ul class="nav">
+              <li><a href="">Rodrigo jacinto</a></li>
+              <li><a href="">Rodrigo jacinto</a></li>
+              <li><a href="">Rodrigo jacinto</a></li>
+              <li><a href="">Rodrigo jacinto</a></li>
+              <li><a href="">Rodrigo jacinto</a></li>
+            </ul>
+          </div> <!--fim col -->
+
+          <div class="col-md-3">
+          <ul class="nav">
+            <li><a href="">Rodrigo jacinto</a></li>
+            <li><a href="">Rodrigo jacinto</a></li>
+            <li><a href="">Rodrigo jacinto</a></li>
+            <li><a href="">Rodrigo jacinto</a></li>
+            <li><a href="">Rodrigo jacinto</a></li>
+          </ul>
+        </div> <!--fim col -->
+
+        <div class="col-md-3">
+        <ul class="nav">
+          <li><a href="">Rodrigo jacinto</a></li>
+          <li><a href="">Rodrigo jacinto</a></li>
+          <li><a href="">Rodrigo jacinto</a></li>
+          <li><a href="">Rodrigo jacinto</a></li>
+          <li><a href="">Rodrigo jacinto</a></li>
+        </ul>
+      </div> <!--fim col -->
+
+      <div class="col-md-3 ajuste-img">
+          <img src="img/criador.jpg" class="img-responsive img-circle">
+      </div>
+
+        </div><!-- fim row-->
+
+        </div>
+
+    </footer>
+
+    <!-- MODAIS ABAIXO  -->
+    <div class="modal fade" id="logar">
+      <div class="modal-dialog modal-sm">
+
+        <div class="modal-content">
+
+              <!-- Header -->
+              <div class="modal-header">
+                Logar
+              </div>
+
+            <!-- Body -->
+            <div class="modal-body">
+
+                <form>
+                    <div class="form-group">
+                          <input type="email" name="email" class="form-control" placeholder="exemple@gmail.com" autofocus>
+                    </div>
+
+                    <div class="form-group">
+                          <input type="password" name="senha" class="form-control" placeholder="senha">
+                    </div>
+
+            </div>
+
+            <!-- Footer -->
+            <div class="modal-footer">
+
+              <button type="submit" class="btn btn-primary">Entrar</button>
+              <button type="button" data-dismiss="modal" class="btn btn-default">Cancelar</button>
+              </form>
+            </div>
+
+        </div><!--fim modal-content -->
+
+
+      </div><!--fim modal-dialog -->
+
+    </div><!--fim modal -->
+
+
+
+    <div class="modal fade" id="cadastrar">
+      <div class="modal-dialog">
+
+        <div class="modal-content">
+
+              <div class="modal-header">
+                    Cadastro
+              </div>
+
+              <div class="modal-body">
+
+                <form>
+                    <div class="form-group">
+                      <label for="nome">Nome</label>
+                          <input type="text" id="nome" class="form-control" name="nome" autofocus>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="sobre">Sobrenome</label>
+                          <input type="text" id="sobre" class="form-control" name="sobre" autofocus>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="senha">Senha</label>
+                          <input type="password" id="senha" class="form-control" name="senha" autofocus>
+                    </div>
+
+
+                    <div class="form-group">
+                      <label>
+                        <input type="radio" name="sexo" value="m">Masculino
+                      </label>
+
+                      <div class="form-group">
+                        <label>
+                          <input type="radio" name="sexo" value="f">Feminino
+                        </label>
+
+                    </div>
+
+
+              </div><!-- fim modal-body -->
+
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+                <button type="reset" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                </form>
+              </div>
+
+
+        </div><!--fim modal-content -->
+
+
+      </div><!--fim modal-dialog -->
+
+    </div><!--fim modal -->
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

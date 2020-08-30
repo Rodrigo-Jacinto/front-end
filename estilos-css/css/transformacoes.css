@@ -1,0 +1,17 @@
+.quadrado {
+  width:200px;
+  height:200px;
+  font-weight:bold;
+  color:white;
+  font-size: 2em;
+  text-shadow: 0 0 15px black;
+  background-color:red;
+}
+
+
+.quadrado:hover {
+    /*transform:skew(30deg);/*Rotaciona a imagem*/
+   /*transform:translate(10px, 10px);movimenta o elemento na posição x e y da tela*/
+  /*transform:rotate(30deg);/*Roda o elemento, positivo para direita, negavito para esquerda*/
+ /*transform:scale(1.5);/*Aumento o tamanho do elemento */
+}

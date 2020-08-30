@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+p {
+
+  margin:10px 15px 16px 13px;
+  padding: 20px 30px 40px 50px;
+  border:20px ridge blue;
+
+  /*
+  ----Largura da Borda----
+  border-top-width:10px;
+  border-right-width:20px;
+  border-bottom-width:30px;
+  border-left-width:40px;
+
+  ---Cores da Borda----
+  border-top-color:red;
+  border-right-color:blue;
+  border-bottom-color:green;
+  border-left-color:yellow;
+
+  ----Forma Simplifacada de definição de Borda-----
+  border-width:20px;
+  border-style:outset;
+  border-color:green;
+
+  ---Estilos da Borda----
+  Border-sytle:
+  -solid
+  -ridge
+  -dotted
+  -dashed
+  -double
+  -inset
+  -outset
+  */
+
+  /*
+  margin:50px; Aplica 50px === para todos os lados da margem
+  margin:50px 20px ===== 50px para o topo e bottom, e 20px para direita e esquerda
+  margin 50px 20px 30px ===== 50px para o topo, 20px para direita e esquerda e 30px para bottom
+
+  ----Enchimento----
+  padding-top:100px;
+  padding-right:150px;
+  padding-bottom:200px;
+  padding-left:250px;
+
+  ----Margem----
+  margin-top:100px;
+  margin-right:150px;
+  margin-bottom:160px;
+  margin-left:130px;
+  */
+}

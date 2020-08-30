@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+body {
+  background-image:url("img/css3.jpg");
+}
+
+div {
+
+  margin:50px;
+  width:400px;
+  height:400px;
+  border:2px solid black;
+
+  background-color:#FFBB00;/*Cores de fundo pode usar o "nome da cor" rgb ou hexadecimal */
+  background-image:url("img/css3.jpg");/* Imagem de fundo usando o comando url */
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size: 30px 50px /* Diz o tamanho do background */
+
+  /* background:#FFBB00 url("img/css3.jpg") no-repeat center center; */
+
+}
+/* -------------Background-------------
+
+    background-repeat:
+    - no-repeat
+    - repeat-x
+    - repeat-y
+
+    background-attachment:fixed; Alinha as imagens dentro da borda com o fundo
+    - fixed
+    - scroll
+
+    background-position:
+    -left top
+    -center top
+    -right top
+
+    -left center
+    -center center
+    -right center
+
+    -left bottom
+    -right bottom
+    -center bottom
+
+    background-position:90px 100px; usando posições relativas
+    background-position:-10px -10px;podemos usar valores negativos também
+    background-position:50% 50%; posições relativas com porcentagem
+
+    Utilizando background reduzido
+
+    background:#FFBB944 url() no-repeat fixed left center;
